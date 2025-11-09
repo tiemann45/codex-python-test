@@ -1,64 +1,57 @@
-# Project Title
+# Codex Python Test
 
-This is a sample repository to test ChatGPT Codex.
+Professional Python starter that ships with a Jupyter notebook for exploring historical stock prices from Yahoo Finance.
 
-## Description
+## Project layout
 
-An in-depth paragraph about your project and overview of use.
-
-## Getting Started
-
-### Dependencies
-
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
 ```
-code blocks for commands
+├── notebooks/              # Jupyter notebooks (historical_price.ipynb lives here)
+├── src/codex_python_test/  # Placeholder Python package for future code
+├── pyproject.toml          # Project metadata and dependencies
+└── requirements.txt        # Runtime dependency mirror for simple installs
 ```
 
-## Help
+## Getting started
 
-Any advise for common problems or issues.
+### Prerequisites
+
+- Python 3.10+
+- `pip` and `venv` (bundled with modern Python)
+
+### Setup
+
+```bash
+python -m venv .venv
+source .venv/bin/activate            # Windows: .venv\Scripts\activate
+pip install --upgrade pip
+pip install -r requirements.txt
 ```
-command to run if program contains helper info
+
+To install optional developer tooling:
+
+```bash
+pip install .[dev]
 ```
 
-## Authors
+### Working with the notebook
 
-Contributors names and contact info
+1. Start Jupyter Lab (or Notebook):
+   ```bash
+   jupyter lab
+   ```
+2. Open `notebooks/historical_price.ipynb`.
+3. Enter the ticker symbol plus start and end dates in the provided widgets and run all cells. The notebook fetches dividend/split‑adjusted pricing using `yfinance`, displays a preview, and renders a Matplotlib line chart.
 
-ex. Dominique Pizzie  
-ex. [@DomPizzie](https://twitter.com/dompizzie)
+## Testing & linting
 
-## Version History
+Add tests or linters in the `tests/` folder (not yet created). Recommended commands once configured:
 
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
-* 0.1
-    * Initial Release
+```bash
+pytest
+ruff check .
+```
 
 ## License
 
-This project is licensed under the [NAME HERE] License - see the LICENSE.md file for details
-
-## Acknowledgments
-
-Inspiration, code snippets, etc.
-* [awesome-readme](https://github.com/matiassingers/awesome-readme)
-* [PurpleBooth](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2)
-* [dbader](https://github.com/dbader/readme-template)
-* [zenorocha](https://gist.github.com/zenorocha/4526327)
-* [fvcproductions](https://gist.github.com/fvcproductions/1bfc2d4aecb01a834b46)
-
+MIT (update as needed).
 

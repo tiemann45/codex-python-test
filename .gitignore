@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.tox/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+.DS_Store
+.idea/
+.vscode/
+.env
