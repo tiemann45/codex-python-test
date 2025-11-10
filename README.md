@@ -33,10 +33,6 @@ To install optional developer tooling:
 pip install .[dev]
 ```
 
-### New Section
-
-This is a new section.
-
 ### Working with the notebook
 
 1. Start Jupyter Lab (or Notebook):
